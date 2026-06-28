@@ -1,12 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shiqian Ma</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    h1, h2 {
+      color: #1f3a5f;
+    }
+
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      font-weight: bold;
+    }
+
+    .header {
+      display: flex;
+      gap: 25px;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+
+    .photo {
+      width: 180px;
+      max-width: 35%;
+      border-radius: 6px;
+    }
+
+    .news li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+      }
+
+      .photo {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Shiqian Ma</h1>
-  <p>Professor, Johns Hopkins University</p>
-  <p>This website is under construction.</p>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#bio">Biography</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#group">Group</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="header">
+    <!-- If you want to add a photo later, upload photo.jpg to the same repository and uncomment this line. -->
+    <!-- <img src="photo.jpg" alt="Shiqian Ma" class="photo"> -->
+
+    <div>
+      <h1>Shiqian Ma</h1>
+      <p>
+        Professor<br>
+        Department of Applied Mathematics and Statistics<br>
+        Data Science and AI Institute<br>
+        Johns Hopkins University
+      </p>
+
+      <p>
+        I am also affiliated with the Department of Computer Science and the Department of Electrical and Computer Engineering at Johns Hopkins University.
+      </p>
+
+      <p>
+        Email: <a href="mailto:sma76@jhu.edu">sma76@jhu.edu</a>
+      </p>
+
+      <p>
+        <a href="https://scholar.google.com/">Google Scholar</a> |
+        <a href="https://orcid.org/0000-0003-1967-1069">ORCID</a> |
+        <a href="https://github.com/shiqianma">GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="bio">
+    <h2>Biography</h2>
+    <p>
+      Shiqian Ma is a Professor in the Department of Applied Mathematics and Statistics and the Data Science and AI Institute at Johns Hopkins University. He is also affiliated with the Department of Computer Science and the Department of Electrical and Computer Engineering.
+    </p>
+
+    <p>
+      His research focuses on the mathematical foundations of modern AI, with particular emphasis on optimization, geometry, and machine learning. He develops scalable optimization algorithms and mathematical frameworks for efficient and reliable training of foundation models and large-scale machine learning systems.
+    </p>
+
+    <p>
+      He serves as an Action Editor for the Journal of Machine Learning Research (JMLR) and Transactions on Machine Learning Research (TMLR), and as an Associate Editor for SIAM Journal on Optimization (SIOPT) and Journal of Optimization Theory and Applications (JOTA). He has served as a Senior Area Chair for NeurIPS, ICML, and AISTATS, among other leading machine learning conferences.
+    </p>
+
+    <p>
+      He received his B.S. in Mathematics from Peking University, M.S. in Computational Mathematics from the Chinese Academy of Sciences, and Ph.D. in Operations Research from Columbia University.
+    </p>
+  </section>
+
+  <section id="research">
+    <h2>Research Interests</h2>
+    <p>
+      Mathematical Foundations of AI, Optimization, Foundation Models, Machine Learning, and Riemannian Optimization.
+    </p>
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li>June 2026: I joined Johns Hopkins University as a Professor in the Department of Applied Mathematics and Statistics and the Data Science and AI Institute.</li>
+      <li>June 2026: I am an Action Editor of Transactions on Machine Learning Research.</li>
+      <li>May 2026: Our paper <em>Demystifying Manifold Constraints in LLM Pre-training</em> is on arXiv.</li>
+      <li>April 2026: Our paper <em>Riemannian Dueling Optimization</em> is accepted to ICML 2026.</li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Selected Publications</h2>
+
+    <p>
+      For a complete and up-to-date list of publications, please see my
+      <a href="https://scholar.google.com/">Google Scholar profile</a>.
+    </p>
+
+    <ol>
+      <li>
+        Kang An, Jiaxiang Li, Donald Goldfarb, and Shiqian Ma.
+        <em>Demystifying Manifold Constraints in LLM Pre-training</em>. 2026.
+      </li>
+
+      <li>
+        Yuxuan Ren, Abhishek Roy, and Shiqian Ma.
+        <em>Riemannian Dueling Optimization</em>. ICML, 2026.
+      </li>
+
+      <li>
+        Shixiang Chen, Shiqian Ma, Anthony Man-Cho So, and Tong Zhang.
+        <em>Nonsmooth Optimization over the Stiefel Manifold and Beyond: Proximal Gradient Method and Recent Variants</em>.
+        SIAM Review, 2024.
+      </li>
+    </ol>
+  </section>
+
+  <section id="group">
+    <h2>Group</h2>
+
+    <p>
+      I am looking for motivated Ph.D. students and postdoctoral researchers interested in optimization, machine learning, and mathematical foundations of AI.
+    </p>
+
+    <h3>Current Group Members</h3>
+    <p>To be updated.</p>
+
+    <h3>Former Students</h3>
+    <p>To be updated.</p>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <p>To be updated.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:sma76@jhu.edu">sma76@jhu.edu</a>
+    </p>
+    <p>
+      Johns Hopkins University<br>
+      Baltimore, MD
+    </p>
+  </section>
+
+  <footer>
+    Last updated: June 2026.
+  </footer>
+
 </body>
 </html>
