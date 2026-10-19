@@ -1,0 +1,59 @@
+/* Shared styling for Home, Biography, Research, and Group.
+   Based on the stylesheet in the uploaded homepage. No build step is required. */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.6;
+  color: #222;
+  background: #fff;
+}
+
+h1, h2 { color: #1f3a5f; }
+a { color: #0645ad; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid #1f3a5f; outline-offset: 4px; }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-bottom: 30px;
+}
+nav a {
+  display: inline-block;
+  padding-bottom: 3px;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+nav a[aria-current="page"] {
+  color: #1f3a5f;
+  border-bottom-color: #1f3a5f;
+}
+
+.site-name { margin: 0 0 12px; font-size: 1.1em; font-weight: bold; }
+.site-name a { color: #1f3a5f; }
+.header { display: flex; gap: 25px; align-items: flex-start; margin-bottom: 30px; }
+.photo { width: 180px; max-width: 35%; height: auto; border-radius: 6px; margin-top: 25px; }
+.page-content h1 { margin-top: 0; }
+.page-content li { margin-bottom: 8px; }
+.news li { margin-bottom: 8px; }
+
+footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.skip-link { position: absolute; left: 20px; top: -100px; }
+.skip-link:focus { top: 8px; padding: 8px 12px; background: #fff; z-index: 10; }
+
+@media (max-width: 600px) {
+  body { margin: 24px auto; }
+  nav { gap: 8px 16px; font-size: 0.95em; }
+  .header { flex-direction: column; gap: 8px; }
+  .photo { max-width: 100%; margin-top: 8px; }
+}
